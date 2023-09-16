@@ -1,0 +1,326 @@
+/* ********************  Navbar start css  ********************* */
+
+.nav {
+  width: 100%;
+  height: 130px;
+  background: var(--title-color);
+  z-index: 999;
+  transition: 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  color: var(--title-color);
+  flex: initial;
+}
+
+.nav.active {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+  transition: 0.3s ease-in-out;
+  color: var(--main-color);
+  background: var(--title-color);
+}
+
+/* **************   Nav Call Container start  **************** */
+
+.nav-media-container {
+  width: 100%;
+  height: 45px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--main-color);
+}
+
+.nav-call {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.nav-call .icon {
+  width: 16px;
+  fill: var(--title-color);
+  margin-right: 6px;
+}
+
+.nav-call a {
+  font-size: 15px;
+  color: var(--title-color);
+}
+
+.nav-call a:hover {
+  opacity: 0.8;
+}
+
+.nav-media-container .social-icon-container {
+  width: initial;
+  margin: 0;
+}
+
+.nav-media-container .social-icon-block {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+}
+
+.nav-media-container .social-icon-block .icon {
+  width: 60%;
+}
+
+/* *****   Nav Call Container end  ***** */
+
+.nav .container {
+  width: 100%;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+  margin-right: 10px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.hamburger .span1 {
+  width: 30px;
+  height: 2px;
+  background: var(--main-color);
+  display: block;
+}
+
+.hamburger .span2 {
+  margin-left: auto;
+  margin-top: 4px;
+  width: 24px;
+  height: 2px;
+  background: var(--main-color);
+  transition: 0.3s ease-in;
+  display: block;
+}
+
+.hamburger .span3 {
+  margin-top: 4px;
+  margin-left: auto;
+  width: 16px;
+  height: 2px;
+  background: var(--main-color);
+  display: block;
+  transition: 0.3s ease-in;
+}
+
+.hamburger:hover .span2,
+.hamburger:hover .span3{
+  width: 30px;
+}
+
+
+.empty {
+  display: none;
+}
+
+.logo-block {
+  width: 80px;
+  height: 70px;
+}
+
+.logo-block .logo {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.side-menu ul {
+  margin: 0px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.side-menu ul li {
+  position: relative;
+  display: inline-block;
+  padding: 0px;
+  margin: 0 30px;
+  list-style: none;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 700;
+  color: var(--bold-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.side-menu ul li:hover {
+  color: var(--main-color);
+}
+
+/* ********************  Mobile sidebar   *********************** */
+
+.mobile-sidebar {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100vh;
+  background: var(--title-color);
+  transform: translateX(110%);
+  transition: 0.3s ease-in;
+  z-index: 999;
+  box-shadow: 0 -2px 20px rgba(0, 0, 0.8);
+  overflow-y: scroll;
+}
+
+.mobile-sidebar .number {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 15px 15px 0;
+  background: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.mobile-sidebar .number a {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--title-color);
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.mobile-sidebar ul {
+  padding: 0;
+}
+
+.mobile-sidebar ul li {
+  border-bottom: 2px solid var(--text-color);
+  padding: 15px;
+  list-style: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--bold-color);
+  transition: 0.3s;
+  opacity: 0.9;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.3s ease-in;
+}
+
+.mobile-sidebar ul li:hover {
+  opacity: 0.6;
+}
+
+.mobile-sidebar .social-icon-container {
+  margin: 0;
+}
+
+.mobile-sidebar.active {
+  transform: translateX(0%);
+}
+
+/* *******************  Media query  ************************* */
+
+@media only screen and (max-width: 1000px) {
+  .side-menu ul li {
+    margin: 0 20px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .auto {
+    height: auto;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .side-menu {
+    display: none;
+  }
+
+  /* .side-menu ul{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100vh!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateX(-120%);
+    background: var(--title-color);
+    transition: .3s ease-in;
+    z-index: 999;
+  }
+  
+  .side-menu ul.active{
+    transform: translateX(0%);
+  } */
+
+  .hamburger .span1.active {
+    width: 20px;
+    height: 3px;
+    background: var(--title-color);
+    transform: rotate(44deg) translate(2px, -3px);
+    opacity: 0.8;
+  }
+
+  .hamburger .span2.active {
+    display: none;
+  }
+
+  .hamburger .span3.active {
+    height: 3px;
+    margin-top: 0;
+    width: 20px;
+    display: block;
+    background: var(--title-color);
+    transform: rotate(-47deg) translateX(5px);
+    opacity: 0.8;
+  }
+}
+
+/* *************** Navbar css end  ***************** */
+
+@media (max-width: 500px) {
+  .nav-media-container {
+    padding: 0 20px;
+  }
+
+  .nav-call .icon {
+    width: 14px;
+  }
+
+  .nav-call a {
+    font-size: 13px;
+  }
+
+  .nav-media-container .social-icon-block {
+    width: 25px;
+    height: 25px;
+    background: transparent;
+  }
+
+  .nav-media-container .social-icon-block .icon {
+    width: 60%;
+  }
+
+  .logo-block {
+    width: 60px;
+    height: 50px;
+  }
+}

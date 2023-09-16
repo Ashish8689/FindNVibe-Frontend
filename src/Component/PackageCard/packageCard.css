@@ -1,0 +1,176 @@
+.packageCard-container{
+    position: relative;
+    margin: 0 auto;
+    width: 95%;
+    height: 550px;
+    border-radius: 15px;    
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    overflow: hidden;
+}
+
+.packageCard-img-container{
+  width: 100%;
+  height: 50%;
+}
+
+.packageCard-img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.packageCard-content{
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+}
+
+.packageCard-content .rating-review-container{
+    display: flex;
+    align-items: center;
+}
+
+.packageCard-content .review-container{
+    height: 100%;
+}
+
+.packageCard-content .review-container h3{
+    margin: 0;
+    margin-top: 4px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.packageCard-title{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.packageCard-pricing-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.packageCard-pricing{
+    padding-top: 6px;
+   font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.packageCard-pricing span{
+    padding-left: 4px;
+    font-size: 18px;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.packageCard-description{
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--bold-color);
+    opacity: .6;
+}
+
+.packageCard-details-button-container{
+    padding-top: 20px;
+}
+
+.packageCard-details-button-container .package-details-button{
+    padding: 10px 30px;
+    background: transparent;
+    border:2px solid var(--main-color);
+    border-radius: 4px;
+    color: var(--main-color);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+}
+
+.package-details-button:hover{
+    background: var(--main-color);
+    color: var(--title-color);
+}
+
+.packageCard-rating-container{
+    padding-top: 5px;
+    display: flex;
+}
+
+.rating-review-container .rating-container .star{
+  margin-right: 3px;
+  fill:#F2A905;
+  width: 16px;
+}
+
+.editPackage{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    background: var(--main-color);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+ }
+ 
+ .editPackage .icon{
+   width: 20px;
+   stroke: var(--title-color);
+   opacity: .8;
+   transition: .2s ease-in-out;
+ }
+
+ .editPackage:hover .icon{
+     opacity: 1;
+ }
+
+
+@media(max-width:990px){
+
+    .packageCard-container{
+        height: 500px;
+    }
+
+}
+
+
+@media(max-width:768px){
+    .offer-container{
+        padding:30px 0;
+    }
+}
+
+@media(max-width:520px){
+
+    .packageCard-container{
+        height: 550px;
+    }
+    
+}
+
+@media(max-width:420px){
+
+    .packageCard-container{
+        height: 580px;
+    }
+    
+}
+
+@media(max-width:350px){
+
+    .packageCard-container{
+        height: 650px;
+    }
+    
+}

@@ -1,0 +1,140 @@
+.about{
+    padding:50px 0;
+  }
+  
+  .about .section-flex{ 
+    display: flex;
+    flex: 100%;
+    flex-wrap: wrap;
+  }
+  
+   .about .section-flex .section-left{
+      flex:50%;
+      position: relative;
+  }
+  
+   .about  .content{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  
+   .about .content .title{
+    color: var(--block-color);
+    margin: 0;
+    font-size:45px;
+    font-weight: 800;
+    max-width: 95%;
+    color: var(--bold-color);
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+  }
+  
+   .about .content .subtitle{
+      font-size:30px;
+      margin-bottom: 5px;
+      color: var(--main-color);
+      opacity: .7;
+      font-family: 'Satisfy', cursive;
+    }
+  
+   .about .content a{
+    border:none;
+    font-size: 18px;
+    color: var(--bold-color);
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: .3s;
+  }
+  
+   .about .section-flex .section-right{
+    flex:50%;
+    display: flex;
+    align-items: center;   
+  }
+   
+   .about .section-img-container{
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  
+   .about .section-img{
+      width: 100%;
+      max-width: 600px;
+  }
+  
+  .about .content ul{
+    padding-left: 0;
+    padding-top: 15px;
+  }
+  
+  .about .content ul li{
+    max-width: 600px;
+    margin: auto 0;
+    height: auto;
+    list-style: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-color);
+    background:whitesmoke;
+    border-radius: 10px;
+  }
+  
+  .bucketlist-swiper-container{
+    height: 400px;
+  }
+
+  .bucketlist-swiper-item{
+    display: flex;
+    justify-content: flex-start;
+    user-select: none;
+  }
+
+  
+
+
+  @media(max-width:768px){
+
+    .about .section-flex .section-left,
+    .about .section-flex .section-left{
+       flex: 100%;
+       justify-content: center;
+       padding: 20px 0;
+     }
+
+     .about  .content{
+       text-align: center;
+     }
+
+     .about .content ul{
+       padding-top: 25px;
+       margin: 0;
+     }
+     
+     .about .content ul li{
+       max-width: 100%;
+       width: 100%;
+     }
+  }
+
+
+  @media(max-width:500px){
+
+    .about .content .title{
+      font-size:35px;
+      max-width: 100%;
+    }
+    
+     .about .content .subtitle{
+        font-size:16px;
+      }
+
+     .about .content ul li{
+       font-size: 18px;
+     }
+  }

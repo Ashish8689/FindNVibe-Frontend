@@ -1,0 +1,262 @@
+.aboutUs .about-banner{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('../../../public/images/banner/banner3.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutUs .about-content-container{
+  text-align: center;
+}
+
+.aboutUs .about-title{
+    margin: 0;
+    font-size: 80px;
+    color: var(--title-color);
+    font-family: 'Satisfy', cursive;
+}
+
+.about-comman-container .section1{
+   padding: 120px 0;
+   background: #f9fcfd;
+   overflow: hidden;
+}
+
+.aboutUs .section-flex,
+.about-comman-container .section-flex{ 
+  display: flex;
+  flex: 100%;
+  flex-wrap: wrap;
+}
+
+.aboutUs .section-left,
+.about-comman-container .section-left{
+  flex:50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+ .aboutUs .content .subtitle,
+ .about-comman-container .content .subtitle{
+  font-size: 30px;
+  font-family: 'Satisfy', cursive;
+  opacity: .8;
+  color: var(--main-color);
+}
+
+ .aboutUs .content .title,
+ .about-comman-container .content .title{
+  max-width: 600px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+ .aboutUs .content .para,
+ .about-comman-container .content .para{
+  padding-top: 20px;
+  max-width: 600px;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--bold-color);
+  opacity: .7;
+}
+
+.aboutUs .section-right,
+.about-comman-container .section-right{
+  flex:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-comman-container .section1 .section-img-container{
+  position: relative;
+  z-index: 3;
+}
+
+.about-comman-container .section1 .section-img-container .cover-image{
+  background: var(--title-color);
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 40px rgba(0,0,0,.1);
+}
+
+.about-comman-container .section1 .section-img-container img{
+  max-width: 500px; 
+}
+
+.about-comman-container .section-shapeleft{
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%,-50%);
+  z-index: -1;
+}
+
+.about-comman-container .section-shaperight{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%,50%) rotate(70deg);
+  z-index: -1;
+}
+
+.about-comman-container .section-bigshape{
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%,-30%);
+  opacity: .6;
+  z-index: -2;
+}
+
+
+/* *************   Section 2  ***************** */
+
+.aboutUs .section2 .section-flex{
+  height: 600px;
+}
+
+
+.aboutUs .section2 .section-flex .section-img-container{
+  width: 100%;
+  height: 100%;
+}
+
+.aboutUs .section2 .section-flex .section-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aboutUs .section2 .content{
+  padding: 0 60px;
+}
+
+
+
+
+@media(max-width:1200px){
+
+
+  .section2 .section-flex{
+    height: 600px;
+  }
+  
+  .about-comman-container .section1 .section-img-container img{
+    max-width: 400px; 
+  }
+}
+
+
+@media(max-width:990px){
+
+  .aboutUs .section-left,
+  .aboutUs .section-right,
+  .about-comman-container .section-left,
+  .about-comman-container .section-right{
+     flex: 100%;
+     justify-content: center;
+     padding: 20px 0;
+   }
+
+   .aboutUs .content .title,
+   .about-comman-container .content .title{
+     margin: 0 auto;
+     font-size: 35px;
+   }
+
+   .aboutUs .content,
+   .about-comman-container .content{
+     text-align:center;
+   }
+
+  .section2 .content{
+    padding: 0 30px;
+  }  
+
+
+  .aboutUs .section2 .section-flex{
+    height: auto;
+    padding: 30px 0;
+  }
+  
+
+  .aboutUs .section2 .content{
+    padding: 0 20px;
+  }
+
+   .aboutUs .content .para,
+   .about-comman-container .content .para{
+     max-width: 100%;
+   }
+
+   .section2 .order .section-left{
+     order:2;
+   }
+
+}
+
+
+@media(max-width:600px){
+
+  .aboutUs .about-banner{
+    height: 350px;
+  }
+  
+  .about-comman-container .section1 .section-img-container img{
+    max-width: 400px; 
+  }
+
+  .aboutUs .about-title{
+    font-size: 60px;
+  }
+
+}
+
+
+@media(max-width:500px){
+
+  .aboutUs .about-banner{
+    background-position: -150px 0;
+  }
+
+  .about-comman-container .section1{
+    padding: 60px 0;
+  }
+
+  .aboutUs .content .subtitle,
+  .about-comman-container .content .subtitle{
+    font-size: 22px;
+  }
+  
+  .aboutUs .content .title,
+  .about-comman-container .content .title{
+    font-size: 30px;
+  }
+  
+  .aboutUs .content .para,
+  .about-comman-container .content .para{
+    font-size: 14px;
+  }
+
+  .about-comman-container .section1 .section-img-container img{
+    max-width: 300px; 
+  }
+
+}
+
+@media(max-width:450px){
+
+  .aboutUs .about-banner{
+    background-position: -200px 0;
+  }
+
+}

@@ -1,0 +1,228 @@
+.offer-container{
+    padding:50px 0;
+}
+
+.offer-container .swiper{
+    padding: 20px 0;
+}
+
+.offer-header-container{
+    text-align: center;
+}
+
+  .offer-container .offer-subtitle{
+    font-size: 30px;
+    margin-bottom: -5px;
+    color: var(--main-color);
+    letter-spacing: 1px;
+    font-family: 'Satisfy', cursive;
+  }
+   
+   .offer-container .offer-title{
+     font-size: 50px;
+     font-weight: 900;
+     margin-bottom: -5px;
+     color: var(--bold-color);
+     font-family: 'Playfair Display', serif;
+     letter-spacing: 1px;
+   }
+  
+   .offer-container .offer-title-underline{
+    margin: 10px auto 20px;
+    width: 180px;
+    height: 4px;
+    background: var(--main-color);
+    border-radius: 50%;
+  }
+   
+   .offer-container .offer-description{
+     margin: 0 auto;
+     max-width: 600px;
+     font-size: 18px;
+     font-weight: 500;
+     color: var(--text-color);
+     letter-spacing: .5px;
+   }
+
+
+/* ********************  Offer swiper start  ****************** */
+
+.offer-swiper-container{
+    padding: 40px 0;
+}
+
+.offerCard-container{
+    margin: 0 auto;
+    width: 95%;
+    height: 600px;
+    border-radius: 15px;    
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    overflow: hidden;
+}
+
+.offerCard-img-container{
+  width: 100%;
+  height: 50%;
+}
+
+.offerCard-img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.offerCard-content{
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+}
+
+.offerCard-content .rating-review-container{
+    display: flex;
+    align-items: center;
+}
+
+.offerCard-content .review-container{
+    height: 100%;
+}
+
+.offerCard-content .review-container h3{
+    margin: 0;
+    margin-top: 4px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.offerCard-title{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.offerCard-pricing-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.offerCard-pricing{
+    padding-top: 6px;
+   font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.offerCard-pricing span{
+    padding-left: 4px;
+    font-size: 18px;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.offerCard-description{
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    opacity: .7;
+}
+
+.offerCard-details-button-container{
+    padding-top: 20px;
+}
+
+.offerCard-details-button-container .offer-details-button{
+    padding: 10px 30px;
+    background: transparent;
+    border:2px solid var(--main-color);
+    border-radius: 4px;
+    color: var(--main-color);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+}
+
+.offer-details-button:hover{
+    background: var(--main-color);
+    color: var(--title-color);
+}
+
+.offerCard-rating-container{
+    padding-top: 5px;
+    display: flex;
+}
+
+.rating-review-container .rating-container .star{
+  margin-right: 3px;
+  fill:#F2A905;
+  width: 16px;
+}
+
+.offer-swiper-container .swiper-button-prev{
+    left: 0;  
+}
+  
+.offer-swiper-container .swiper-button-next{
+    right: 0;
+}
+
+.offer-swiper-container .swiper-button-prev::before{
+    content:'prev'!important;
+    color: var(--title-color);
+    font-size: 18px!important;
+    font-weight: 700;
+    transition: .3s ease-in-out;
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none!important;
+    letter-spacing: 0;
+    text-transform: none;
+    font-variant: initial;
+    line-height: 1;
+}
+
+.offer-swiper-container .swiper-button-prev,
+.offer-swiper-container .swiper-button-next{
+    width: 50px!important;
+    height: 50px!important;
+    background: var(--main-color);
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+}
+
+
+.offer-swiper-container .swiper-button-next:after, 
+.offer-swiper-container .swiper-button-prev:after{
+    color: var(--title-color);
+    font-size: 18px!important;
+    font-weight: 700;
+    transition: .3s ease-in-out;
+}
+
+.offer-swiper-container .swiper-button-prev:hover,
+.offer-swiper-container .swiper-button-next:hover{
+    opacity: .8;
+}
+
+
+
+@media(max-width:768px){
+
+    .offer-container{
+        padding:30px 0;
+    }
+
+    .offer-container .offer-subtitle{
+        font-size: 24px;
+    }
+       
+    .offer-container .offer-title{
+         font-size: 35px;
+    }
+    
+}

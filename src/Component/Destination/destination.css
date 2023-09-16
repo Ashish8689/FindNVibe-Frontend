@@ -1,0 +1,373 @@
+.destination .swiper-sliderBanner{
+    width: 100%;
+    height: 700px;
+}
+.destination-content{
+    padding: 40px 0;
+}
+
+.destination-content-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.destination-review-rating-container{
+    display: flex;
+    align-items: center;
+}
+
+.destination-review-rating-container .rating-container{
+    display: flex;
+}
+
+.destination-review-rating-container .rating-container .star{
+  margin-right: 3px;
+  fill:#F2A905;
+  width: 16px;
+}
+
+.destination-review-container h3{
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.destination-location{
+    display: flex;
+    align-items: center;
+}
+
+.destination-location .icon-name{
+    display: flex;
+    align-items: center;
+}
+
+.destination-location .icon{
+    fill: var(--main-color);
+    width: 20px;
+}
+
+.destination-location h3{
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.destination-location a{
+    text-decoration: none;
+    padding: 2px 10px;
+    border-radius: 4px;
+    border:2px solid var(--main-color);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--main-color);
+    transition: .3s ease-in;
+}
+
+.destination-location a:hover{
+    background: var(--main-color);
+    color:var(--title-color);
+}
+
+.destination-pricing{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.destination-pricing span{
+    padding-left: 4px;
+    font-size: 20px;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.destination-title-container{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.destination-title-container .title{
+   font-size: 35px;   
+   font-weight: 700;
+   color: var(--main-color);
+   margin: 0;
+}
+
+.destination-title-container .subtitle{
+   font-size: 18px;   
+   font-weight: 500;
+    max-width: 700px;
+}
+
+.destination-description-container p{
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.destination-description-container h3{
+    padding-top: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--bold-color);
+    opacity: .75;
+    text-transform: capitalize;
+}
+
+.destination-description-container h3 span{
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    color: #000;
+    opacity: .7;
+}
+
+.destination-description-container ul{
+    padding: 5px 0 20px 20px;
+}
+
+.destination-description-container li{
+    margin-top: 8px;
+     font-size: 16px;
+     font-weight: 600;
+     color: var(--main-color);
+     opacity: .7;
+ }
+
+ .destination-links-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+
+.destination-links-button{
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    border:2px solid green;
+    border-radius: 4px;
+    color: green;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.destination-links-button a{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    user-select: none;
+    color: green;
+}
+
+.destination-links-button .play{
+    width: 10px;
+    margin-right: 10px;
+}
+
+.destination-links-button:hover{
+    background: green;
+    color: #fff;
+}
+
+.destination-links-button:hover a{
+    color: #fff;
+}
+
+.destination-booknow{
+    padding: 10px 30px;
+    background: transparent;
+    border-radius: 4px;
+    color: var(--title-color);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    background: var(--main-color);
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+}
+
+.destination-booknow:hover{
+    background: var(--bold-color);
+    color: var(--title-color);
+}
+
+
+
+
+
+@media only screen and (max-width:768px){
+
+    .destination .swiper-sliderBanner{
+        height: 500px;
+    }
+
+    .destination-booknow-container{
+        padding: 20px 0;
+    }    
+
+    .destination-links-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+    
+    .destination-links-button{
+        margin-right: 0;
+        margin-top: 15px;
+    }
+
+}
+
+
+@media only screen and (max-width:550px){
+
+    .destination .swiper-sliderBanner{
+        height: 400px;
+    }
+
+    .destination-content-header{
+        height: 50px;
+    }
+
+    .destination-review-rating-container{
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .destination-review-container h3{
+        padding: 6px;
+        margin: 0;
+    }
+
+    .destination-review-rating-container .rating-container .star{
+        width: 16px;
+      }
+    
+    .destination-location{
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .destination-location a{
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+    
+    
+    .destination-pricing{
+        font-size: 16px;
+    }
+    
+    .destination-pricing span{
+        font-size: 20px;
+    }
+    
+
+    .destination-title-container .title{
+       font-size: 25px;   
+    }
+
+    
+    .destination-description-container p{
+        font-size: 16px;
+    }
+
+    .destination-booknow{
+        font-size: 12px;
+    }
+
+
+}
+
+
+@media only screen and (max-width:450px){
+
+    .destination-booknow-container{
+        padding: 20px 0;
+    }
+}
+
+
+
+@media only screen and (max-width:390px){
+
+    .destination-title-container{
+        flex-direction: column;
+        align-items: initial;
+    }
+
+}
+
+
+@media only screen and (max-width:360px){
+
+ 
+    .destination .swiper-sliderBanner{
+        height: 350px;
+    }
+
+    .destination-content-header{
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .destination-review-container h3{
+        font-size: 13px;
+    }
+
+    .destination-review-rating-container .rating-container .star{
+        width: 14px;
+      }
+    
+    .destination-location{
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .destination-location h3{
+        font-size: 13px;
+    }
+
+    .destination-location a{
+        padding: 3px 8px;
+        font-size: 8px;
+    }
+    
+    
+    .destination-pricing{
+        font-size: 14px;
+    }
+    
+    .destination-pricing span{
+        font-size: 28px;
+    }
+    
+
+    .destination-title-container .title{
+       font-size: 22px;   
+    }
+
+    
+    .destination-description-container p{
+        font-size: 16px;
+    }
+    
+    .destination-booknow{
+        font-size: 12px;
+    }
+}
